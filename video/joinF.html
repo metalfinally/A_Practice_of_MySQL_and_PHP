@@ -1,0 +1,58 @@
+﻿<HTML>
+  <HEAD>
+    <TITLE>影片新增</TITLE>
+		<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+  </HEAD>
+  <BODY BGCOLOR="lightyellow">
+    <P ALIGN="center"><font size="5"><b>影片新增&nbsp;</b></font></P>
+<FORM ACTION="addF.php" METHOD="post">
+      <TABLE BORDER="2" ALIGN="center" BORDERCOLOR="#6666FF">
+        <TR> 
+          <TD COLSPAN="2" BGCOLOR="#7878ff" ALIGN="center"> 
+            <FONT COLOR="#FFFFFF">請填入下列資料</FONT>          </TD>
+        </TR>
+        <TR BGCOLOR="#ffff78"> 
+          <TD ALIGN="right">影片中文名稱：</TD>
+          <TD><INPUT NAME="tw_name" TYPE="text" SIZE="30"></TD></TR>
+        <TR BGCOLOR="#ffff78"> 
+          <TD ALIGN="right">影片英文名稱：</TD>
+          <TD><INPUT NAME="en_name" TYPE="text" SIZE="30"></TD></TR>
+        <TR BGCOLOR="#ffff78"> 
+          <TD ALIGN="right">發行地：</TD>
+          <TD><INPUT NAME="country" TYPE="text" SIZE="15"></TD></TR>
+        <TR BGCOLOR="#ffff78">
+          <TD ALIGN="right">類形：</TD>
+          <TD><INPUT NAME="category" TYPE="text" SIZE="8"></TD></TR>
+        <TR BGCOLOR="#ffff78"> 
+          <TD ALIGN="right">影片格式：</TD>
+          <TD> 
+            <INPUT TYPE="radio" NAME="media" VALUE="dvd" CHECKED>
+            DVD 
+            <INPUT TYPE="radio" NAME="media" VALUE="vcd">
+            VCD          </TD>
+        </TR>
+        <TR BGCOLOR="#ffff78"> 
+          <TD ALIGN="right">租金：</TD>
+          <TD><INPUT NAME="rental_fee" TYPE="TEXT" SIZE="8"></TD></TR>
+        <TR BGCOLOR="#ffff78"> 
+          <TD ALIGN="right">出租期限：</TD>
+          <TD><INPUT NAME="rental_period" TYPE="text" SIZE="8"></TD></TR>
+        <TR BGCOLOR="#ffff78"> 
+          <TD ALIGN="right">預期費：</TD>
+          <TD><input name="extended_fee" type="text" size="8"></TD>
+        </TR>
+        <TR BGCOLOR="#ffff78"> 
+          <TD ALIGN="right">賠償金：</TD>
+          <TD><INPUT NAME="compensation" TYPE="text" SIZE="8"></TD></TR>
+		<TR BGCOLOR="#ffff78"> 
+          <TD ALIGN="right">進貨量：</TD>
+          <TD><INPUT NAME="stock" TYPE="text" SIZE="8"></TD></TR>
+        <TR BGCOLOR="#ffff78"> 
+          <TD ALIGN="center" COLSPAN="2"> 
+            <Input type="submit" Value="新增影片">　
+            <INPUT TYPE="reset" VALUE="重新填寫">          </TD>
+        </TR>
+      </TABLE>
+  </FORM>
+  </BODY>
+</HTML>

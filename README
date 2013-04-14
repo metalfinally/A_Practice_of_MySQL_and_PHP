@@ -1,0 +1,14 @@
+﻿The Repo is a Homework of University. It's a Query System of Video rental. 
+
+The system has two parts. One is Member, it can inquire Personal rental status, rental history.
+Another is Video, It display the individual video status in shop.
+
+The system is written in HTML, PHP and MySQL.
+
+=== Chinese Description ===
+
+這是大學的作業，一個簡單的影片租債系統
+
+這系統分為兩部份，一個是給會員查詢借閱狀態的子系統（member資料夾）、另一個為影片庫存系統（video資料夾）。
+
+本系統由html、PHP及MySQL組成

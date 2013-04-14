@@ -1,0 +1,50 @@
+﻿<HTML>
+	<HEAD>
+		<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+		<TITLE>會員管理系統</TITLE>
+		<SCRIPT LANGUAGE="javascript">
+			function check_data()
+			{
+				if (document.myForm.account.value.length == 0)
+				{
+					alert("帳號欄位不可以空白哦！");
+					return false;
+				}
+				if (document.myForm.password.value.length == 0)
+				{
+					alert("密碼欄位不可以空白哦！");
+					return false;
+				}	
+				myForm.submit();
+			}
+		</SCRIPT>
+	</HEAD>
+	<BODY>
+    <P align="center">會員中心</P>
+    <FORM ACTION="checkpwd.php" METHOD="post" NAME="myForm">
+      <TABLE WIDTH="40%" ALIGN="center">
+        <TR> 
+          <TD ALIGN="center"> 
+              <FONT COLOR="#3333FF">帳號：</FONT> 
+              <INPUT NAME="account" TYPE="text" SIZE="15">
+          </TD>
+        </TR>
+        <TR> 
+          <TD ALIGN="center"> 
+              <FONT COLOR="#3333FF">密碼：</FONT> 
+              <INPUT NAME="password" TYPE="password" SIZE="15">
+          </TD>
+        </TR>
+        <TR>
+          <TD ALIGN="center"> 
+              <INPUT TYPE="button" VALUE="登入" onClick="check_data()">      　 
+              <INPUT TYPE="reset" VALUE="重填">
+          </TD>
+        </TR>
+      </TABLE>
+ 		</FORM>
+    <P ALIGN="center">
+      <A HREF="join.htm">加入會員</A>　
+      <A HREF="search_pwd.htm">查詢密碼</A></P>
+	</BODY>
+</HTML>

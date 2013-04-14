@@ -1,0 +1,33 @@
+<HTML>
+	<HEAD>
+		<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+		<TITLE>查詢密碼</TITLE>
+	</HEAD>
+  <BODY>
+    <P ALIGN="center">密碼查詢</P>
+    <P ALIGN="center">請輸入您當初申請服務的帳號及 E-mail，並選擇一種通知方式，然後按 [查詢] 鈕。</P>
+    <FORM METHOD="post" ACTION="search.php" >
+      <TABLE ALIGN="center">
+        <TR><TD>帳號：</TD>
+           <TD><INPUT TYPE="text" NAME="account" SIZE="10"></TD>
+        </TR>
+        <TR><TD>電子郵件：</TD>
+           <TD><INPUT TYPE="text" NAME="email" SIZE="30"></TD>
+        </TR>
+        <TR><TD>顯示方式：</TD>
+             <TD>
+              <SELECT NAME="show_method">
+                <OPTION VALUE="網頁顯示">網頁顯示</OPTION>
+                <OPTION VALUE="E-mail 傳送">E-mail 傳送</OPTION>
+              </SELECT>
+             </TD>
+        </TR>
+        <TR><TD COLSPAN="2" ALIGN="center"> 
+               <INPUT TYPE="submit" VALUE="查詢">　
+               <INPUT TYPE="reset" VALUE="重填">
+            </TD>
+        </TR>
+      </TABLE>
+    </FORM>
+  </BODY>
+</HTML>
